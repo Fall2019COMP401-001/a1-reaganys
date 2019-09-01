@@ -25,6 +25,7 @@ public class A1Novice {
 			
 			for (int a = 0; a < totalBought; a++) {
 				int iTemp = scan.nextInt();
+				scan.next();
 				double dTemp = scan.nextDouble();
 				
 				output[i] += iTemp * dTemp;
@@ -32,6 +33,8 @@ public class A1Novice {
 			}
 			
 		}
+		
+		scan.close();
 		
 		for (int i = 0; i < customerCount; i++) {
 			System.out.println(fName[i].charAt(0) + ". " + lName[i] + ": " + String.format("%.2f", output[i]));
